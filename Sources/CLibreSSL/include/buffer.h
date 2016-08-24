@@ -70,7 +70,18 @@ extern "C" {
 
 #include <stddef.h>
 #include <sys/types.h>
-#include "../strlcat.h"
+	
+#ifndef H_STRLCAT
+#define H_STRLCAT
+
+#if defined(__linux__)
+
+size_t
+strlcat(char *dst, const char *src, size_t dsize);
+
+#endif
+
+#endif
 
 /* Already declared in ossl_typ.h */
 /* typedef struct buf_mem_st BUF_MEM; */
