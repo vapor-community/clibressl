@@ -1,5 +1,6 @@
 import PackageDescription
 
 let package = Package(
-    name: "CTLS"
+    name: "CTLS",
+    exclude: ["libressl"]
 )

@@ -1,4 +1,4 @@
-/* crypto/aes/aes_ofb.c */
+/* $OpenBSD$ */
 /* ====================================================================
  * Copyright (c) 2002-2006 The OpenSSL Project.  All rights reserved.
  *
@@ -7,7 +7,7 @@
  * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
+ *    notice, this list of conditions and the following disclaimer. 
  *
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in
@@ -49,13 +49,13 @@
  *
  */
 
-#include "aes.h"
-#include "modes.h"
+#include "include/aes.h"
+#include "include/modes.h"
 
-void AES_ofb128_encrypt(const unsigned char *in, unsigned char *out,
-                        size_t length, const AES_KEY *key,
-                        unsigned char *ivec, int *num)
+void
+AES_ofb128_encrypt(const unsigned char *in, unsigned char *out, size_t length,
+    const AES_KEY *key, unsigned char *ivec, int *num)
 {
-    CRYPTO_ofb128_encrypt(in, out, length, key, ivec, num,
-                          (block128_f) AES_encrypt);
+	CRYPTO_ofb128_encrypt(in, out, length, key, ivec, num,
+	    (block128_f)AES_encrypt);
 }

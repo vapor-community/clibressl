@@ -1,4 +1,4 @@
-/* crypto/evp/p_dec.c */
+/* $OpenBSD: p_dec.c,v 1.9 2014/07/11 08:44:48 jsing Exp $ */
 /* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
  * All rights reserved.
  *
@@ -57,31 +57,36 @@
  */
 
 #include <stdio.h>
-#include "cryptlib.h"
-#include "rand.h"
-#ifndef OPENSSL_NO_RSA
-# include "rsa.h"
-#endif
-#include "evp.h"
-#include "objects.h"
-#include "x509.h"
 
-int EVP_PKEY_decrypt_old(unsigned char *key, const unsigned char *ek, int ekl,
-                         EVP_PKEY *priv)
+#include "include/opensslconf.h"
+
+#include "include/evp.h"
+#include "include/err.h"
+#include "include/objects.h"
+#include "include/x509.h"
+
+#ifndef OPENSSL_NO_RSA
+#include "include/rsa.h"
+#endif
+
+int
+EVP_PKEY_decrypt_old(unsigned char *key, const unsigned char *ek, int ekl,
+    EVP_PKEY *priv)
 {
-    int ret = -1;
+	int ret = -1;
 
 #ifndef OPENSSL_NO_RSA
-    if (priv->type != EVP_PKEY_RSA) {
+	if (priv->type != EVP_PKEY_RSA) {
 #endif
-        EVPerr(EVP_F_EVP_PKEY_DECRYPT_OLD, EVP_R_PUBLIC_KEY_NOT_RSA);
+		EVPerr(EVP_F_EVP_PKEY_DECRYPT_OLD, EVP_R_PUBLIC_KEY_NOT_RSA);
 #ifndef OPENSSL_NO_RSA
-        goto err;
-    }
+		goto err;
+	}
 
-    ret =
-        RSA_private_decrypt(ekl, ek, key, priv->pkey.rsa, RSA_PKCS1_PADDING);
- err:
+	ret = RSA_private_decrypt(ekl, ek, key, priv->pkey.rsa,
+	    RSA_PKCS1_PADDING);
+
+err:
 #endif
-    return (ret);
+	return (ret);
 }

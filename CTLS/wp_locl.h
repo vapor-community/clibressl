@@ -1,3 +1,5 @@
-#include "whrlpool.h"
+/* $OpenBSD$ */
 
-void whirlpool_block(WHIRLPOOL_CTX *, const void *, size_t);
+#include "include/whrlpool.h"
+
+void whirlpool_block(WHIRLPOOL_CTX *,const void *,size_t);
