@@ -69,6 +69,7 @@
 #include "include/sha.h"
 
 #include "dsa_locl.h"
+#include "arc4random_buf.h"
 
 int
 DSA_generate_parameters_ex(DSA *ret, int bits, const unsigned char *seed_in,

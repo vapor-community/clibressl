@@ -69,6 +69,7 @@
 #include "include/ocsp.h"
 #include "include/x509.h"
 #include "include/x509v3.h"
+#include "arc4random_buf.h"
 
 /* Standard wrapper functions for extensions */
 

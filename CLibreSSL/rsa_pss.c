@@ -65,6 +65,7 @@
 #include "include/evp.h"
 #include "include/rsa.h"
 #include "include/sha.h"
+#include "arc4random_buf.h"
 
 static const unsigned char zeroes[] = { 0, 0, 0, 0, 0, 0, 0, 0 };
 

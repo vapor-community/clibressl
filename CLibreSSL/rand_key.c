@@ -56,6 +56,7 @@
 #include <stdlib.h>
 
 #include "include/des.h"
+#include "arc4random_buf.h"
 
 int
 DES_random_key(DES_cblock *ret)

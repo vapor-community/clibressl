@@ -73,6 +73,7 @@
 #include "include/dsa.h"
 #include "include/rsa.h"
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 /* Utility function: read a DWORD (4 byte unsigned integer) in little endian
  * format

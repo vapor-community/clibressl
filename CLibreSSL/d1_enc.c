@@ -120,6 +120,7 @@
 #include "include/evp.h"
 #include "include/hmac.h"
 #include "include/md5.h"
+#include "arc4random_buf.h"
 
 /* dtls1_enc encrypts/decrypts the record in |s->wrec| / |s->rrec|, respectively.
  *

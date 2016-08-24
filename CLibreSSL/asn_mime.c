@@ -61,6 +61,7 @@
 #include "include/asn1t.h"
 #include "include/err.h"
 #include "include/x509.h"
+#include "arc4random_buf.h"
 
 #include "asn1_locl.h"
 

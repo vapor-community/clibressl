@@ -144,6 +144,7 @@
 #include "include/md5.h"
 #include "reallocarray.h"
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 void
 tls1_cleanup_key_block(SSL *s)

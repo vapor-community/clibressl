@@ -67,6 +67,7 @@
 #include "include/err.h"
 #include "include/hmac.h"
 #include "include/pkcs12.h"
+#include "arc4random_buf.h"
 
 /* Generate a MAC */
 int

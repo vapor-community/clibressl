@@ -171,6 +171,7 @@
 #include "bytestring.h"
 #include "explicit_bzero.h"
 #include "timingsafe_memcmp.h"
+#include "arc4random_buf.h"
 
 static int ca_dn_cmp(const X509_NAME * const *a, const X509_NAME * const *b);
 

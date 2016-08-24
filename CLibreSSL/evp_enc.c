@@ -71,6 +71,7 @@
 
 #include "evp_locl.h"
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 #define M_do_cipher(ctx, out, in, inl) ctx->cipher->do_cipher(ctx, out, in, inl)
 

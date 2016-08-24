@@ -18,7 +18,7 @@
 #include <stdlib.h>
 
 #include "include/opensslconf.h"
-
+#include "arc4random_buf.h"
 #include "include/rand.h"
 
 /*

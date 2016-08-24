@@ -64,6 +64,7 @@
 #include "include/evp.h"
 #include "include/objects.h"
 #include "include/x509.h"
+#include "arc4random_buf.h"
 
 #ifndef OPENSSL_NO_RSA
 #include "include/rsa.h"

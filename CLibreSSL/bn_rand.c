@@ -118,6 +118,7 @@
 
 #include "bn_lcl.h"
 
+#include "arc4random_buf.h"
 
 #include "explicit_bzero.h"
 

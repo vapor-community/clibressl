@@ -74,6 +74,7 @@
 #define BUFSIZE	1024
 #define RAND_DATA 1024
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 /* Note that these functions should not be used. */
 

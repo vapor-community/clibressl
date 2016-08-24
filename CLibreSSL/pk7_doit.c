@@ -65,6 +65,7 @@
 #include "include/x509.h"
 #include "include/x509v3.h"
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 static int add_attribute(STACK_OF(X509_ATTRIBUTE) **sk, int nid, int atrtype,
     void *value);

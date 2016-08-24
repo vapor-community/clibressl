@@ -116,6 +116,7 @@
 #include "include/buffer.h"
 #include "include/evp.h"
 #include "include/objects.h"
+#include "arc4random_buf.h"
 
 static int ssl23_client_hello(SSL *s);
 static int ssl23_get_server_hello(SSL *s);

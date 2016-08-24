@@ -155,6 +155,7 @@
 #include "include/engine.h"
 #endif
 
+#include "arc4random_buf.h"
 #include "bytestring.h"
 #include "timingsafe_memcmp.h"
 

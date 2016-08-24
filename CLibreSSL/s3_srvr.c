@@ -166,6 +166,7 @@
 
 #include "bytestring.h"
 #include "explicit_bzero.h"
+#include "arc4random_buf.h"
 
 #include "timingsafe_memcmp.h"
 

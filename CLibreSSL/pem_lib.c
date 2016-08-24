@@ -81,6 +81,7 @@
 #include "asn1_locl.h"
 #include "explicit_bzero.h"
 #include "reallocarray.h"
+#include "arc4random_buf.h"
 
 #define MIN_LENGTH	4
 

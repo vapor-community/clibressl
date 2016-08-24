@@ -63,6 +63,7 @@
 #include "include/bn.h"
 #include "include/err.h"
 #include "include/rsa.h"
+#include "arc4random_buf.h"
 
 int
 RSA_padding_add_SSLv23(unsigned char *to, int tlen, const unsigned char *from,

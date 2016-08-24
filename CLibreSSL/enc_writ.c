@@ -64,6 +64,7 @@
 #include "include/opensslconf.h"
 
 #include "des_locl.h"
+#include "arc4random_buf.h"
 
 /*
  * WARNINGS:

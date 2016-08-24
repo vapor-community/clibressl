@@ -63,6 +63,7 @@
 #include "include/bn.h"
 #include "include/err.h"
 #include "include/rsa.h"
+#include "arc4random_buf.h"
 
 int
 RSA_padding_add_PKCS1_type_1(unsigned char *to, int tlen,

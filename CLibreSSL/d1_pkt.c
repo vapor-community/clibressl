@@ -126,6 +126,7 @@
 #include "pqueue.h"
 #include "bytestring.h"
 #include "timingsafe_memcmp.h"
+#include "arc4random_buf.h"
 
 /* mod 128 saturating subtract of two 64-bit values in big-endian order */
 static int

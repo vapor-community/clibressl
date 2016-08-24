@@ -58,6 +58,7 @@
 #include "include/err.h"
 #include "include/gost.h"
 #include "gost_locl.h"
+#include "arc4random_buf.h"
 
 /* Convert little-endian byte array into bignum */
 BIGNUM *
