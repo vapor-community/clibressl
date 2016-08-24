@@ -118,6 +118,7 @@
 #include "include/evp.h"
 
 #include "bytestring.h"
+#include "timingsafe_memcmp.h"
 
 static int do_ssl3_write(SSL *s, int type, const unsigned char *buf,
     unsigned int len, int create_empty_fragment);

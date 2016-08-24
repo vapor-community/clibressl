@@ -65,6 +65,7 @@
 #include "include/x509v3.h"
 
 #include "evp_locl.h"
+#include "explicit_bzero.h"
 
 /* HMAC pkey context structure */
 

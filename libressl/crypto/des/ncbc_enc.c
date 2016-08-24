@@ -63,6 +63,8 @@
 
 #include "des_locl.h"
 
+#if false
+
 #ifdef CBC_ENC_C__DONT_UPDATE_IV
 void DES_cbc_encrypt(const unsigned char *in, unsigned char *out, long length,
 		     DES_key_schedule *_schedule, DES_cblock *ivec, int enc)
@@ -146,3 +148,5 @@ void DES_ncbc_encrypt(const unsigned char *in, unsigned char *out, long length,
 	tin0=tin1=tout0=tout1=xor0=xor1=0;
 	tin[0]=tin[1]=0;
 	}
+
+#endif

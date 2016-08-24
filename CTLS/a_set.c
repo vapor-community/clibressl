@@ -61,6 +61,7 @@
 
 #include "include/asn1_mac.h"
 #include "include/err.h"
+#include "reallocarray.h"
 
 #ifndef NO_ASN1_OLD
 

@@ -76,6 +76,7 @@
 #include "include/engine.h"
 #endif
 #include "include/err.h"
+#include "explicit_bzero.h"
 
 static const ECDH_METHOD *default_ECDH_method = NULL;
 

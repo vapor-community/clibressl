@@ -63,6 +63,7 @@
 #include "include/err.h"
 #include "include/evp.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 /* Doesn't do anything now: Builtin PBE algorithms in static table.
  */

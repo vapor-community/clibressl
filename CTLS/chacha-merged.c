@@ -7,8 +7,8 @@ Public domain.
 
 #include <sys/types.h>
 
-#include <stddef.h>
 #include <stdint.h>
+#include <stddef.h>
 
 #define CHACHA_MINKEYLEN 	16
 #define CHACHA_NONCELEN		8

@@ -23,6 +23,8 @@
 #include "include/crypto.h"
 
 #include "bytestring.h"
+#include "timingsafe_memcmp.h"
+#include "bs_cbs.h"
 
 void
 CBS_init(CBS *cbs, const uint8_t *data, size_t len)

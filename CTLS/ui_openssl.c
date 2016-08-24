@@ -126,6 +126,7 @@
 #include <unistd.h>
 
 #include "ui_locl.h"
+#include "explicit_bzero.h"
 
 #ifndef NX509_SIG
 #define NX509_SIG 32

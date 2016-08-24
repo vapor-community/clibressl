@@ -62,6 +62,7 @@
 #include "include/bn.h"
 #include "include/err.h"
 #include "include/pkcs12.h"
+#include "explicit_bzero.h"
 
 /* PKCS12 compatible key/IV generation */
 #ifndef min

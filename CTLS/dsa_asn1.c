@@ -64,6 +64,9 @@
 #include "include/dsa.h"
 #include "include/err.h"
 
+
+#include "explicit_bzero.h"
+
 /* Override the default new methods */
 static int
 sig_cb(int operation, ASN1_VALUE **pval, const ASN1_ITEM *it, void *exarg)

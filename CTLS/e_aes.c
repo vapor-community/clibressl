@@ -61,6 +61,10 @@
 
 #include "evp_locl.h"
 #include "modes_lcl.h"
+#include "timingsafe_memcmp.h"
+
+
+#include "explicit_bzero.h"
 
 typedef struct {
 	AES_KEY ks;

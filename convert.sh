@@ -49,10 +49,10 @@ for file in */; do
     cp -R $file*.h $CTLS/
 done
 
-for file in $(ls compat); do
-    echo "Removing compat $file"
-    rm $CTLS/$file
-done
+# for file in $(ls compat); do
+#     echo "Removing compat $file"
+#     rm $CTLS/$file
+# done
 
 cd $CTLS
 

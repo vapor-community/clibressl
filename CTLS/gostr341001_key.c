@@ -60,6 +60,7 @@
 #include "include/objects.h"
 #include "gost_locl.h"
 
+#include "explicit_bzero.h"
 struct gost_key_st {
 	EC_GROUP *group;
 

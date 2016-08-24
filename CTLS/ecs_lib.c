@@ -63,6 +63,7 @@
 #endif
 #include "include/err.h"
 #include "include/bn.h"
+#include "explicit_bzero.h"
 
 static const ECDSA_METHOD *default_ECDSA_method = NULL;
 

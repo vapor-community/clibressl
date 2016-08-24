@@ -68,6 +68,9 @@
 #include "ec_lcl.h"
 #include "include/err.h"
 
+
+#include "explicit_bzero.h"
+
 EC_KEY *
 EC_KEY_new(void)
 {

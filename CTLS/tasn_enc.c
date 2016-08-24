@@ -62,6 +62,7 @@
 #include "include/asn1.h"
 #include "include/asn1t.h"
 #include "include/objects.h"
+#include "reallocarray.h"
 
 static int asn1_i2d_ex_primitive(ASN1_VALUE **pval, unsigned char **out,
     const ASN1_ITEM *it, int tag, int aclass);

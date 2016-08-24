@@ -25,10 +25,10 @@
 #define MD2_INT unsigned int
 #endif
 
-#if defined(HEADER_RC2_H) && !defined(RC2_INT)
-/* I need to put in a mod for the alpha - eay */
+#if !defined(RC2_INT)
 #define RC2_INT unsigned int
 #endif
+
 
 #if defined(HEADER_RC4_H)
 #if !defined(RC4_INT)

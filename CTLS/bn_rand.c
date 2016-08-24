@@ -118,6 +118,9 @@
 
 #include "bn_lcl.h"
 
+
+#include "explicit_bzero.h"
+
 static int
 bnrand(int pseudorand, BIGNUM *rnd, int bits, int top, int bottom)
 {

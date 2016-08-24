@@ -65,6 +65,7 @@
 #include "include/ui.h"
 #include "include/x509.h"
 
+#include "explicit_bzero.h"
 /* should be init to zeros. */
 static char prompt_string[80];
 

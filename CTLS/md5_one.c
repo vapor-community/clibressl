@@ -60,6 +60,7 @@
 #include <string.h>
 #include "include/md5.h"
 #include "include/crypto.h"
+#include "explicit_bzero.h"
 
 unsigned char *MD5(const unsigned char *d, size_t n, unsigned char *md)
 	{

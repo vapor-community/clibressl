@@ -61,6 +61,7 @@
 
 #include "include/err.h"
 #include "include/pkcs12.h"
+#include "explicit_bzero.h"
 
 /* Encrypt/Decrypt a buffer based on password and algor, result in a
  * malloc'ed buffer

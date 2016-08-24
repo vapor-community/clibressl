@@ -117,6 +117,7 @@
 #include "include/bn.h"
 #include "include/err.h"
 #include "include/rsa.h"
+#include "explicit_bzero.h"
 
 static int RSA_eay_public_encrypt(int flen, const unsigned char *from,
     unsigned char *to, RSA *rsa, int padding);

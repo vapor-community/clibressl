@@ -19,6 +19,7 @@
 #include "include/opensslconf.h"
 
 #include "bytestring.h"
+#include "bs_cbs.h"
 
 /*
  * kMaxDepth is a just a sanity limit. The code should be such that the length
@@ -103,7 +104,7 @@ is_primitive_type(unsigned int tag)
 static char
 is_eoc(size_t header_len, CBS *contents)
 {
-	return header_len == 2 && CBS_mem_equal(contents, "\x00\x00", 2);
+	return header_len == 2 && CBS_mem_equal(contents, (uint8_t *)"\x00\x00", 2);
 }
 
 /*

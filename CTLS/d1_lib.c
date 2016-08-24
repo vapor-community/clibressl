@@ -70,6 +70,9 @@
 #include "pqueue.h"
 #include "ssl_locl.h"
 
+
+#include "explicit_bzero.h"
+
 int dtls1_listen(SSL *s, struct sockaddr *client);
 
 SSL3_ENC_METHOD DTLSv1_enc_data = {

@@ -102,6 +102,7 @@
 
 #include "include/crypto.h"
 #include "include/lhash.h"
+#include "reallocarray.h"
 
 #undef MIN_NODES
 #define MIN_NODES	16

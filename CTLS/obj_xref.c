@@ -58,6 +58,7 @@
 
 #include "include/objects.h"
 #include "obj_xref.h"
+#include "reallocarray.h"
 
 DECLARE_STACK_OF(nid_triple)
 STACK_OF(nid_triple) *sig_app, *sigx_app;

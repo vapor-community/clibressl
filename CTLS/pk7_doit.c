@@ -64,6 +64,7 @@
 #include "include/objects.h"
 #include "include/x509.h"
 #include "include/x509v3.h"
+#include "explicit_bzero.h"
 
 static int add_attribute(STACK_OF(X509_ATTRIBUTE) **sk, int nid, int atrtype,
     void *value);

@@ -229,7 +229,7 @@ ASN1_TIME_set_string_internal(ASN1_TIME *s, const char *str, int mode)
 	if ((tmp = strdup(str)) == NULL)
 		return (0);
 	free(s->data);
-	s->data = tmp;
+	s->data = (unsigned char *)tmp;
 	s->length = strlen(tmp);
 	s->type = type;
 
@@ -293,7 +293,7 @@ ASN1_TIME_adj_internal(ASN1_TIME *s, time_t t, int offset_day, long offset_sec,
 		return (NULL);
 	}
 	free(s->data);
-	s->data = p;
+	s->data = (unsigned char *)p;
 	s->length = len;
 	return (s);
 }
@@ -315,7 +315,7 @@ ASN1_TIME_check(ASN1_TIME *t)
 {
 	if (t->type != V_ASN1_GENERALIZEDTIME && t->type != V_ASN1_UTCTIME)
 		return (0);
-	return (t->type == asn1_time_parse(t->data, t->length, NULL, t->type));
+	return (t->type == asn1_time_parse((char *)t->data, t->length, NULL, t->type));
 }
 
 ASN1_GENERALIZEDTIME *
@@ -329,7 +329,7 @@ ASN1_TIME_to_generalizedtime(ASN1_TIME *t, ASN1_GENERALIZEDTIME **out)
 		return (NULL);
 
 	memset(&tm, 0, sizeof(tm));
-	if (t->type != asn1_time_parse(t->data, t->length, &tm, t->type))
+	if (t->type != asn1_time_parse((char *)t->data, t->length, &tm, t->type))
 		return (NULL);
 	if ((str = gentime_string_from_tm(&tm)) == NULL)
 		return (NULL);

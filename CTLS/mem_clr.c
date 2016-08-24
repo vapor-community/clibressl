@@ -3,6 +3,7 @@
 /* Ted Unangst places this file in the public domain. */
 #include <string.h>
 #include "include/crypto.h"
+#include "explicit_bzero.h"
 
 void
 OPENSSL_cleanse(void *ptr, size_t len)

@@ -58,6 +58,7 @@
 
 #include "include/crypto.h"
 #include "des_locl.h"
+#include "explicit_bzero.h"
 
 void DES_string_to_key(const char *str, DES_cblock *key)
 	{

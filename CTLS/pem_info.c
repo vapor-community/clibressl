@@ -74,6 +74,7 @@
 #ifndef OPENSSL_NO_RSA
 #include "include/rsa.h"
 #endif
+#include "explicit_bzero.h"
 
 STACK_OF(X509_INFO) *
 PEM_X509_INFO_read(FILE *fp, STACK_OF(X509_INFO) *sk, pem_password_cb *cb,

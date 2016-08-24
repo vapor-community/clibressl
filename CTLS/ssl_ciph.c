@@ -149,6 +149,7 @@
 #endif
 
 #include "ssl_locl.h"
+#include "explicit_bzero.h"
 
 #define SSL_ENC_DES_IDX		0
 #define SSL_ENC_3DES_IDX	1
@@ -727,6 +728,14 @@ ssl_cipher_get_evp_aead(const SSL_SESSION *s, const EVP_AEAD **aead)
 		return 1;
 	case SSL_AES256GCM:
 		*aead = EVP_aead_aes_256_gcm();
+		return 1;
+#endif
+#if !defined(OPENSSL_NO_CHACHA) && !defined(OPENSSL_NO_POLY1305)
+	case SSL_CHACHA20POLY1305:
+		*aead = EVP_aead_chacha20_poly1305();
+		return 1;
+	case SSL_CHACHA20POLY1305_OLD:
+		*aead = EVP_aead_chacha20_poly1305_old();
 		return 1;
 #endif
 	default:

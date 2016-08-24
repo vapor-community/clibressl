@@ -142,6 +142,8 @@
 #include "include/evp.h"
 #include "include/hmac.h"
 #include "include/md5.h"
+#include "reallocarray.h"
+#include "explicit_bzero.h"
 
 void
 tls1_cleanup_key_block(SSL *s)

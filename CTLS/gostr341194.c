@@ -59,6 +59,7 @@
 #include "include/gost.h"
 
 #include "gost_locl.h"
+#include "explicit_bzero.h"
 
 /* Following functions are various bit meshing routines used in
  * GOST R 34.11-94 algorithms */

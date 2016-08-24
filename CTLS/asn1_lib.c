@@ -63,6 +63,8 @@
 #include "include/asn1.h"
 #include "include/err.h"
 
+#include "explicit_bzero.h"
+
 static int asn1_get_length(const unsigned char **pp, int *inf, long *rl, int max);
 static void asn1_put_length(unsigned char **pp, int length);
 

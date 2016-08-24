@@ -156,6 +156,7 @@
 #endif
 
 #include "bytestring.h"
+#include "timingsafe_memcmp.h"
 
 const char *SSL_version_str = OPENSSL_VERSION_TEXT;
 

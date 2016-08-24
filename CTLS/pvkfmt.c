@@ -72,6 +72,7 @@
 #if !defined(OPENSSL_NO_RSA) && !defined(OPENSSL_NO_DSA)
 #include "include/dsa.h"
 #include "include/rsa.h"
+#include "explicit_bzero.h"
 
 /* Utility function: read a DWORD (4 byte unsigned integer) in little endian
  * format

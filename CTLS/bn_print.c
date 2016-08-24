@@ -67,6 +67,7 @@
 #include "include/err.h"
 
 #include "bn_lcl.h"
+#include "reallocarray.h"
 
 static const char Hex[]="0123456789ABCDEF";
 

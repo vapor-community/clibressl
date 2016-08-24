@@ -125,6 +125,7 @@
 
 #include "pqueue.h"
 #include "bytestring.h"
+#include "timingsafe_memcmp.h"
 
 /* mod 128 saturating subtract of two 64-bit values in big-endian order */
 static int

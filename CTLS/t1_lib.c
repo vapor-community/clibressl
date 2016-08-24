@@ -118,6 +118,9 @@
 
 #include "ssl_locl.h"
 #include "bytestring.h"
+#include "reallocarray.h"
+#include "timingsafe_memcmp.h"
+#include "bs_cbs.h"
 
 static int tls_decrypt_ticket(SSL *s, const unsigned char *tick, int ticklen,
     const unsigned char *sess_id, int sesslen,

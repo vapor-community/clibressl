@@ -52,6 +52,7 @@
 #include "include/crypto.h"
 #include "include/opensslv.h"
 #include "include/sha.h"
+#include "explicit_bzero.h"
 
 #if !defined(__STRICT_ALIGNMENT) || defined(SHA512_ASM)
 #define SHA512_BLOCK_CAN_MANAGE_UNALIGNED_DATA

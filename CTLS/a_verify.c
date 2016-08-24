@@ -69,6 +69,9 @@
 #include "include/objects.h"
 #include "include/x509.h"
 
+
+#include "explicit_bzero.h"
+
 #include "asn1_locl.h"
 
 int

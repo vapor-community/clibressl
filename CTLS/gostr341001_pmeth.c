@@ -620,7 +620,7 @@ pkey_gost01_ctrl(EVP_PKEY_CTX *ctx, int type, int p1, void *p2)
 		}
 		memcpy(ukm, p2, p1);
 		free(pctx->shared_ukm);
-		pctx->shared_ukm = ukm;
+		pctx->shared_ukm = (unsigned char*)ukm;
 		return 1;
 	    }
 

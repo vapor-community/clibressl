@@ -63,6 +63,7 @@
 #ifndef OPENSSL_NO_ENGINE
 #include "include/engine.h"
 #endif
+#include "explicit_bzero.h"
 
 /* returns
  *      1: correct signature

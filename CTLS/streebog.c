@@ -62,6 +62,7 @@
 #include "include/gost.h"
 
 #include "gost_locl.h"
+#include "explicit_bzero.h"
 
 static const STREEBOG_LONG64 A_PI_table[8][256] = {
 	{ /* 0 */

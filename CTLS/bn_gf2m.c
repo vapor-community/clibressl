@@ -96,6 +96,7 @@
 #include "include/err.h"
 
 #include "bn_lcl.h"
+#include "reallocarray.h"
 
 #ifndef OPENSSL_NO_EC2M
 

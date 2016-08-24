@@ -66,11 +66,15 @@
 #include <stdio.h>
 #include <string.h>
 
+
+#include "explicit_bzero.h"
+
 #include "include/opensslconf.h"
 
 #include "include/err.h"
 
 #include "bn_lcl.h"
+#include "reallocarray.h"
 
 /* This stuff appears to be completely unused, so is deprecated */
 #ifndef OPENSSL_NO_DEPRECATED

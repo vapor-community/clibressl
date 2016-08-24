@@ -63,6 +63,7 @@
 
 #include "include/crypto.h"
 #include "include/sha.h"
+#include "explicit_bzero.h"
 
 #ifndef OPENSSL_NO_SHA1
 unsigned char *SHA1(const unsigned char *d, size_t n, unsigned char *md)

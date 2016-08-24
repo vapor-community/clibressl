@@ -60,6 +60,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "explicit_bzero.h"
 #include "include/asn1.h"
 #include "include/bn.h"
 #include "include/err.h"

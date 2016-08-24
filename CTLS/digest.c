@@ -122,6 +122,9 @@
 #include "include/engine.h"
 #endif
 
+
+#include "explicit_bzero.h"
+
 void
 EVP_MD_CTX_init(EVP_MD_CTX *ctx)
 {

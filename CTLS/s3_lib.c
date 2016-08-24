@@ -156,6 +156,7 @@
 
 #include "ssl_locl.h"
 #include "bytestring.h"
+#include "explicit_bzero.h"
 
 #define SSL3_NUM_CIPHERS	(sizeof(ssl3_ciphers) / sizeof(SSL_CIPHER))
 

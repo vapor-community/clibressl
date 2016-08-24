@@ -70,6 +70,7 @@
 #include "include/x509.h"
 
 #include "evp_locl.h"
+#include "explicit_bzero.h"
 
 /* This is an implementation of PKCS#5 v2.0 password based encryption key
  * derivation function PBKDF2.

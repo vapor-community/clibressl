@@ -58,6 +58,7 @@
 #include "include/gost.h"
 
 #include "gost_locl.h"
+#include "explicit_bzero.h"
 
 static inline unsigned int
 f(const GOST2814789_KEY *c, unsigned int x)

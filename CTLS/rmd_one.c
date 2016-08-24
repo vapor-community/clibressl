@@ -60,6 +60,7 @@
 #include <string.h>
 #include "include/ripemd.h"
 #include "include/crypto.h"
+#include "explicit_bzero.h"
 
 unsigned char *RIPEMD160(const unsigned char *d, size_t n,
 	     unsigned char *md)

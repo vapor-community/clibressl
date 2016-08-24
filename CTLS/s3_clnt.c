@@ -169,6 +169,8 @@
 #endif
 
 #include "bytestring.h"
+#include "explicit_bzero.h"
+#include "timingsafe_memcmp.h"
 
 static int ca_dn_cmp(const X509_NAME * const *a, const X509_NAME * const *b);
 
@@ -1555,7 +1557,7 @@ ssl3_get_certificate_request(SSL *s)
 	if (ctype_num > SSL3_CT_NUMBER)
 		ctype_num = SSL3_CT_NUMBER;
 	if (!CBS_get_bytes(&cert_request, &ctypes, ctype_num) ||
-	    !CBS_write_bytes(&ctypes, s->s3->tmp.ctype,
+	    !CBS_write_bytes(&ctypes, (unsigned char *)s->s3->tmp.ctype,
 	    sizeof(s->s3->tmp.ctype), NULL)) {
 		SSLerr(SSL_F_SSL3_GET_CERTIFICATE_REQUEST,
 		    SSL_R_DATA_LENGTH_TOO_LONG);

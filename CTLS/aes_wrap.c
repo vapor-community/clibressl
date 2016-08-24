@@ -56,6 +56,9 @@
 #include "include/aes.h"
 #include "include/bio.h"
 
+
+#include "explicit_bzero.h"
+
 static const unsigned char default_iv[] = {
 	0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6,
 };

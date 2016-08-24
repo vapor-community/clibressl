@@ -61,6 +61,7 @@
 
 #include "include/objects.h"
 #include "include/stack.h"
+#include "reallocarray.h"
 
 #undef MIN_NODES
 #define MIN_NODES	4

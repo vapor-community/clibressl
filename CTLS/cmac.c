@@ -57,6 +57,9 @@
 
 #include "include/cmac.h"
 
+
+#include "explicit_bzero.h"
+
 struct CMAC_CTX_st {
 	/* Cipher context to use */
 	EVP_CIPHER_CTX cctx;

@@ -61,6 +61,7 @@
 
 #include "include/asn1t.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 /* Minor tweak to operation: zero private key data */
 static int

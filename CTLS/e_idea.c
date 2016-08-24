@@ -69,6 +69,9 @@
 
 #include "evp_locl.h"
 
+
+#include "explicit_bzero.h"
+
 static int idea_init_key(EVP_CIPHER_CTX *ctx, const unsigned char *key,
     const unsigned char *iv, int enc);
 

@@ -74,6 +74,7 @@
 #endif
 
 #include "asn1_locl.h"
+#include "explicit_bzero.h"
 
 int pem_check_suffix(const char *pem_str, const char *suffix);
 

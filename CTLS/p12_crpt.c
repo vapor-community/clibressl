@@ -61,6 +61,7 @@
 
 #include "include/err.h"
 #include "include/pkcs12.h"
+#include "explicit_bzero.h"
 
 /* PKCS#12 PBE algorithms now in static table */
 

@@ -165,6 +165,9 @@
 #include "include/x509.h"
 
 #include "bytestring.h"
+#include "explicit_bzero.h"
+
+#include "timingsafe_memcmp.h"
 
 int
 ssl3_accept(SSL *s)
@@ -1700,7 +1703,7 @@ ssl3_get_client_key_exchange(SSL *s)
 			 * section 7.4.7.1).
 			 */
 			i = SSL_MAX_MASTER_KEY_LENGTH;
-			p = fakekey;
+			p = (unsigned char *)fakekey;
 		}
 
 		s->session->master_key_length =

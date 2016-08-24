@@ -62,6 +62,7 @@
 
 #include "include/buffer.h"
 #include "include/txt_db.h"
+#include "reallocarray.h"
 
 #undef BUFSIZE
 #define BUFSIZE	512

@@ -66,6 +66,7 @@
 #include "include/x509.h"
 
 #include "rsa_locl.h"
+#include "explicit_bzero.h"
 
 /* Size of an SSL signature: MD5+SHA1 */
 #define SSL_SIG_LENGTH	36

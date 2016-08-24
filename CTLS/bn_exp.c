@@ -115,6 +115,7 @@
 #include "include/err.h"
 
 #include "bn_lcl.h"
+#include "explicit_bzero.h"
 
 /* maximum precomputation table size for *variable* sliding windows */
 #define TABLE_SIZE	32

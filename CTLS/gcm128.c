@@ -53,6 +53,7 @@
 #include "include/crypto.h"
 #include "modes_lcl.h"
 #include <string.h>
+#include "explicit_bzero.h"
 
 #ifndef MODES_DEBUG
 # ifndef NDEBUG

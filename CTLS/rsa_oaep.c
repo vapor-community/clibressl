@@ -31,6 +31,7 @@
 #include "include/evp.h"
 #include "include/rsa.h"
 #include "include/sha.h"
+#include "timingsafe_memcmp.h"
 
 static int MGF1(unsigned char *mask, long len, const unsigned char *seed,
     long seedlen);

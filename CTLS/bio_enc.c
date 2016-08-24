@@ -63,6 +63,8 @@
 #include "include/buffer.h"
 #include "include/evp.h"
 
+#include "explicit_bzero.h"
+
 static int enc_write(BIO *h, const char *buf, int num);
 static int enc_read(BIO *h, char *buf, int size);
 /*static int enc_puts(BIO *h, const char *str); */

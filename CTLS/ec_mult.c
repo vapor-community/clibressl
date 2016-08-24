@@ -66,6 +66,7 @@
 #include "include/err.h"
 
 #include "ec_lcl.h"
+#include "explicit_bzero.h"
 
 
 /*

@@ -68,6 +68,7 @@
 #include "include/objects.h"
 #include "include/rsa.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 #ifndef OPENSSL_NO_RC4
 

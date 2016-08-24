@@ -68,6 +68,7 @@
 #include "include/err.h"
 
 #include "bn_lcl.h"
+#include "reallocarray.h"
 
 /* TODO list
  *

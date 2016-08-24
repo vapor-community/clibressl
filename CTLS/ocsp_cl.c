@@ -342,7 +342,7 @@ OCSP_check_validity(ASN1_GENERALIZEDTIME *thisupd,
 	 */
 
 	/* Check thisUpdate is valid and not more than nsec in the future */
-	if (asn1_time_parse(thisupd->data, thisupd->length, &tm_this,
+	if (asn1_time_parse((char *)thisupd->data, thisupd->length, &tm_this,
 	    V_ASN1_GENERALIZEDTIME) != V_ASN1_GENERALIZEDTIME) {
 		OCSPerr(OCSP_F_OCSP_CHECK_VALIDITY,
 		    OCSP_R_ERROR_IN_THISUPDATE_FIELD);

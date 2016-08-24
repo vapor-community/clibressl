@@ -65,6 +65,7 @@
 #include "include/err.h"
 
 #include "ec_lcl.h"
+#include "reallocarray.h"
 
 const EC_METHOD *
 EC_GFp_simple_method(void)

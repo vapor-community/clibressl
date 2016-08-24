@@ -58,6 +58,7 @@
 #include "include/ui_compat.h"
 
 #include "ui_locl.h"
+#include "explicit_bzero.h"
 
 int
 UI_UTIL_read_pw_string(char *buf, int length, const char *prompt, int verify)

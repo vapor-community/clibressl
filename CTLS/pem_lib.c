@@ -79,6 +79,7 @@
 #endif
 
 #include "asn1_locl.h"
+#include "explicit_bzero.h"
 
 #define MIN_LENGTH	4
 

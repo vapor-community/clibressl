@@ -64,6 +64,7 @@
 #include "include/objects.h"
 #include "include/rsa.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 int
 RSA_sign_ASN1_OCTET_STRING(int type, const unsigned char *m, unsigned int m_len,

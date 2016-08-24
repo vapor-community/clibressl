@@ -1658,7 +1658,7 @@ X509_cmp_time(const ASN1_TIME *ctm, time_t *cmp_time)
 
 	memset(&tm1, 0, sizeof(tm1));
 
-	if ((type = asn1_time_parse(ctm->data, ctm->length, &tm1, 0)) == -1)
+	if ((type = asn1_time_parse((char *)ctm->data, ctm->length, &tm1, 0)) == -1)
 		goto out; /* invalid time */
 
 	/* RFC 5280 section 4.1.2.5 */

@@ -61,6 +61,7 @@
 
 #include "include/err.h"
 #include "include/x509.h"
+#include "reallocarray.h"
 
 int
 NETSCAPE_SPKI_set_pubkey(NETSCAPE_SPKI *x, EVP_PKEY *pkey)

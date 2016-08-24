@@ -62,6 +62,7 @@
 #include "include/evp.h"
 
 #include "asn1_locl.h"
+#include "explicit_bzero.h"
 
 #define HMAC_TEST_PRIVATE_KEY_FORMAT
 

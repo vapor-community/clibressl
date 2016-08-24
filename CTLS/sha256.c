@@ -17,6 +17,7 @@
 #include "include/crypto.h"
 #include "include/sha.h"
 #include "include/opensslv.h"
+#include "explicit_bzero.h"
 
 int SHA224_Init(SHA256_CTX *c)
 	{

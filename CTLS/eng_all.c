@@ -70,7 +70,9 @@ ENGINE_load_builtin_engines(void)
 #ifndef OPENSSL_NO_STATIC_ENGINE
 #ifndef OPENSSL_NO_HW
 #ifndef OPENSSL_NO_HW_PADLOCK
-	//ENGINE_load_padlock();
+    #if false
+        ENGINE_load_padlock();
+    #endif
 #endif
 #endif
 #endif

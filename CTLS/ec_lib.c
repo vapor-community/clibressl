@@ -70,6 +70,9 @@
 
 #include "ec_lcl.h"
 
+
+#include "explicit_bzero.h"
+
 /* functions for EC_GROUP objects */
 
 EC_GROUP *

@@ -69,6 +69,7 @@
 #include "include/pem.h"
 #include "include/rsa.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 int
 PEM_SealInit(PEM_ENCODE_SEAL_CTX *ctx, EVP_CIPHER *type, EVP_MD *md_type,

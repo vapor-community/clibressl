@@ -66,6 +66,7 @@
 #include "include/pem.h"
 #include "include/pkcs12.h"
 #include "include/x509.h"
+#include "explicit_bzero.h"
 
 static int do_pk8pkey(BIO *bp, EVP_PKEY *x, int isder, int nid,
     const EVP_CIPHER *enc, char *kstr, int klen, pem_password_cb *cb, void *u);
