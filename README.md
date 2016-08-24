@@ -8,7 +8,7 @@
 This module wraps LibreSSL 2.4.2 in a Swift module.
 
 ```swift
-import LibreSSL
+import CLibreSSL
 
 var context = SHA_CTX()
 SHA1_Init(&context)
