@@ -6,7 +6,7 @@
  * ====================================================================
  */
 
-#include <machine/endian.h>
+#include "endian.h"
 
 #include "include/opensslconf.h"
 

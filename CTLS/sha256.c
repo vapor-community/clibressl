@@ -9,7 +9,7 @@
 
 #if !defined(OPENSSL_NO_SHA) && !defined(OPENSSL_NO_SHA256)
 
-#include <machine/endian.h>
+#include "endian.h"
 
 #include <stdlib.h>
 #include <string.h>

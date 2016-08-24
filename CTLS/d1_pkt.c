@@ -113,7 +113,7 @@
  * [including the GNU Public Licence.]
  */
 
-#include <machine/endian.h>
+#include "endian.h"
 
 #include <errno.h>
 #include <stdio.h>

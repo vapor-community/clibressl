@@ -48,7 +48,7 @@
  * ====================================================================
  */
 
-#include <machine/endian.h>
+#include "endian.h"
 #include "include/crypto.h"
 #include "modes_lcl.h"
 #include <string.h>

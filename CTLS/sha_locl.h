@@ -181,7 +181,7 @@ int SHA1_Init(SHA_CTX *c)
 #endif
 
 #if !defined(SHA1_ASM)
-#include <machine/endian.h>
+#include "endian.h"
 static void HASH_BLOCK_DATA_ORDER (SHA_CTX *c, const void *p, size_t num)
 	{
 	const unsigned char *data=p;

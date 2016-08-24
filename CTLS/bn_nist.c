@@ -56,7 +56,7 @@
  *
  */
 
-#include <machine/endian.h>
+#include "endian.h"
 
 #include <stdint.h>
 #include <string.h>

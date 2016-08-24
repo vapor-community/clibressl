@@ -38,7 +38,7 @@
 
 #include "wp_locl.h"
 #include <string.h>
-#include <machine/endian.h>
+#include "endian.h"
 
 typedef unsigned char		u8;
 #if defined(_LP64)
