@@ -51,6 +51,8 @@
 #define BLOCKSZ	64
 #define RSBUFSZ	(16*BLOCKSZ)
 
+int getentropy(void *buf, size_t len);
+
 /* Marked MAP_INHERIT_ZERO, so zero'd out in fork children. */
 static struct _rs {
 	size_t		rs_have;	/* valid bytes at end of rs_buf */

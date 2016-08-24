@@ -344,7 +344,7 @@ ASN1_TIME_to_generalizedtime(ASN1_TIME *t, ASN1_GENERALIZEDTIME **out)
 		*out = tmp;
 
 	free(tmp->data);
-	tmp->data = str;
+	tmp->data = (unsigned char *)str;
 	tmp->length = strlen(str);
 	return (tmp);
 }
@@ -364,7 +364,7 @@ ASN1_UTCTIME_check(ASN1_UTCTIME *d)
 {
 	if (d->type != V_ASN1_UTCTIME)
 		return (0);
-	return (d->type == asn1_time_parse(d->data, d->length, NULL, d->type));
+	return (d->type == asn1_time_parse((char *)d->data, d->length, NULL, d->type));
 }
 
 int
@@ -402,7 +402,7 @@ ASN1_UTCTIME_cmp_time_t(const ASN1_UTCTIME *s, time_t t2)
 	 * The danger is that users of this function will not
 	 * differentiate the -2 failure case from t1 < t2.
 	 */
-	if (asn1_time_parse(s->data, s->length, &tm1, V_ASN1_UTCTIME) == -1)
+	if (asn1_time_parse((char *)s->data, s->length, &tm1, V_ASN1_UTCTIME) == -1)
 		return (-2); /* XXX */
 
 	if (gmtime_r(&t2, &tm2) == NULL)
@@ -420,7 +420,7 @@ ASN1_GENERALIZEDTIME_check(ASN1_GENERALIZEDTIME *d)
 {
 	if (d->type != V_ASN1_GENERALIZEDTIME)
 		return (0);
-	return (d->type == asn1_time_parse(d->data, d->length, NULL, d->type));
+	return (d->type == asn1_time_parse((char *)d->data, d->length, NULL, d->type));
 }
 
 int

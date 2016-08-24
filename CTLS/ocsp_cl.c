@@ -377,7 +377,7 @@ OCSP_check_validity(ASN1_GENERALIZEDTIME *thisupd,
 		return 1;
 
 	/* Check nextUpdate is valid and not more than nsec in the past */
-	if (asn1_time_parse(nextupd->data, nextupd->length, &tm_next,
+	if (asn1_time_parse((char *)nextupd->data, nextupd->length, &tm_next,
 	    V_ASN1_GENERALIZEDTIME) != V_ASN1_GENERALIZEDTIME) {
 		OCSPerr(OCSP_F_OCSP_CHECK_VALIDITY,
 		    OCSP_R_ERROR_IN_NEXTUPDATE_FIELD);

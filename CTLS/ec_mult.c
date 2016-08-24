@@ -67,6 +67,7 @@
 
 #include "ec_lcl.h"
 #include "explicit_bzero.h"
+#include "reallocarray.h"
 
 
 /*
