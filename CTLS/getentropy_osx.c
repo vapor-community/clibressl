@@ -20,6 +20,8 @@
  * http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man2/getentropy.2
  */
 
+#if defined(__APPLE__)
+
 #include <sys/types.h>
 #include <sys/param.h>
 #include <sys/ioctl.h>
@@ -428,3 +430,5 @@ getentropy_fallback(void *buf, size_t len)
 	errno = EIO;
 	return (-1);
 }
+
+#endif

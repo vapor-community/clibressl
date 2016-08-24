@@ -16,7 +16,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#if false
+#if defined(__linux__)
 
 #include <sys/types.h>
 #include <string.h>

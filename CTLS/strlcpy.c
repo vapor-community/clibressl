@@ -17,7 +17,7 @@
  */
 
 
-#if false
+#if defined(__linux__)
 
 #include <sys/types.h>
 #include <string.h>

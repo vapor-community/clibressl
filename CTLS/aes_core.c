@@ -37,6 +37,7 @@
 #include <stdlib.h>
 #include "include/aes.h"
 #include "aes_locl.h"
+#include <stdint.h>
 
 #ifndef AES_ASM
 /*
