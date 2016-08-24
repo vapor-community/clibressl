@@ -69,6 +69,7 @@
 
 #include "include/buffer.h"
 #include "include/err.h"
+#include "strlcpy.h"
 
 #ifndef NO_SYSLOG
 

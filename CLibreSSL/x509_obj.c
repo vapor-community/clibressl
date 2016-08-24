@@ -64,6 +64,7 @@
 #include "include/lhash.h"
 #include "include/objects.h"
 #include "include/x509.h"
+#include "strlcpy.h"
 
 char *
 X509_NAME_oneline(X509_NAME *a, char *buf, int len)

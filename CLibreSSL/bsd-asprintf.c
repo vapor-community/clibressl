@@ -26,6 +26,7 @@
 #include <stdarg.h>
 #include <stdio.h> /* for vsnprintf */
 #include <stdlib.h>
+#include "vasprintf.h"
 
 #ifndef VA_COPY
 # ifdef HAVE_VA_COPY

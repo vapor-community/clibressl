@@ -65,6 +65,7 @@
 #include "include/crypto.h"
 #include "include/rand.h"
 #include "include/buffer.h"
+#include "strlcpy.h"
 
 #include <sys/types.h>
 #include <sys/stat.h>

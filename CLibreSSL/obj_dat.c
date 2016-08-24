@@ -68,6 +68,7 @@
 #include "include/err.h"
 #include "include/lhash.h"
 #include "include/objects.h"
+#include "strlcpy.h"
 
 /* obj_dat.h is generated from objects.h by obj_dat.pl */
 #include "obj_dat.h"

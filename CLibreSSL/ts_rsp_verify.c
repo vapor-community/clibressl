@@ -63,6 +63,7 @@
 #include "include/objects.h"
 #include "include/pkcs7.h"
 #include "include/ts.h"
+#include "strlcpy.h"
 
 /* Private function declarations. */
 

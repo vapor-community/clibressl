@@ -89,6 +89,7 @@
 
 #include "include/bio.h"
 #include "include/err.h"
+#include "strlcpy.h"
 
 static int file_write(BIO *h, const char *buf, int num);
 static int file_read(BIO *h, char *buf, int size);

@@ -65,6 +65,7 @@
 #include "include/evp.h"
 #include "include/pkcs12.h"
 #include "include/x509.h"
+#include "strlcpy.h"
 
 #include "evp_locl.h"
 

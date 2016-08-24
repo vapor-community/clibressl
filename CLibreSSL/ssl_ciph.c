@@ -148,6 +148,7 @@
 #include "include/engine.h"
 #endif
 
+#include "strlcpy.h"
 #include "ssl_locl.h"
 #include "explicit_bzero.h"
 #include "reallocarray.h"

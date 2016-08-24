@@ -64,6 +64,7 @@
 #include <string.h>
 
 #include "include/bio.h"
+#include "strlcpy.h"
 
 #define TRUNCATE
 #define DUMP_WIDTH	16

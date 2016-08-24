@@ -3,6 +3,7 @@
 /* Theo de Raadt places this file in the public domain. */
 
 #include "include/bio.h"
+#include "vasprintf.h"
 
 int
 BIO_printf(BIO *bio, const char *format, ...)

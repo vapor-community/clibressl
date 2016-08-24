@@ -120,6 +120,8 @@
 #include "include/crypto.h"
 #include "include/err.h"
 #include "include/lhash.h"
+#include "strlcpy.h"
+#include "vasprintf.h"
 
 DECLARE_LHASH_OF(ERR_STRING_DATA);
 DECLARE_LHASH_OF(ERR_STATE);

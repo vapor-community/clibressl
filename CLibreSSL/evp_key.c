@@ -64,6 +64,7 @@
 #include "include/objects.h"
 #include "include/ui.h"
 #include "include/x509.h"
+#include "strlcpy.h"
 
 #include "explicit_bzero.h"
 /* should be init to zeros. */
