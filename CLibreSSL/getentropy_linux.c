@@ -50,6 +50,7 @@
 #include <unistd.h>
 #include <time.h>
 #include "include/sha.h"
+#include "explicit_bzero.h"
 
 #include <linux/types.h>
 #include <linux/random.h>
