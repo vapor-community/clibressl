@@ -22,6 +22,7 @@
 #include "include/buffer.h"
 #include "include/err.h"
 #include "strlcpy.h"
+#include "strlcat.h"
 
 /*
  * XXX these functions accept a NULL arg and return NULL

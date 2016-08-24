@@ -66,6 +66,7 @@
 #include "include/dso.h"
 #include "include/err.h"
 #include "include/x509.h"
+#include "asprintf.h"
 
 #define DSO_mod_init_name "OPENSSL_init"
 #define DSO_mod_finish_name "OPENSSL_finish"

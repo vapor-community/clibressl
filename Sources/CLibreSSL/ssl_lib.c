@@ -158,6 +158,7 @@
 #include "arc4random_buf.h"
 #include "bytestring.h"
 #include "timingsafe_memcmp.h"
+#include "strlcat.h"
 
 const char *SSL_version_str = OPENSSL_VERSION_TEXT;
 

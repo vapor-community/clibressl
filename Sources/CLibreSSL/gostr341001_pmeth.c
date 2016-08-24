@@ -65,6 +65,7 @@
 #include "evp_locl.h"
 #include "gost_locl.h"
 #include "gost_asn1.h"
+#include "arc4random_buf.h"
 
 static ECDSA_SIG *
 unpack_signature_cp(const unsigned char *sig, size_t siglen)

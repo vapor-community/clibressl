@@ -64,6 +64,7 @@
 #include "include/pkcs7.h"
 #include "include/ts.h"
 #include "strlcpy.h"
+#include "strlcat.h"
 
 /* Private function declarations. */
 

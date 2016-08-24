@@ -70,6 +70,7 @@
 #include "include/pem.h"
 #include "include/pkcs12.h"
 #include "include/x509.h"
+#include "strlcat.h"
 
 #ifndef OPENSSL_NO_DES
 #include "include/des.h"

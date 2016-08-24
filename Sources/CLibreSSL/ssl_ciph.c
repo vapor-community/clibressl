@@ -152,6 +152,7 @@
 #include "ssl_locl.h"
 #include "explicit_bzero.h"
 #include "reallocarray.h"
+#include "asprintf.h"
 
 #define SSL_ENC_DES_IDX		0
 #define SSL_ENC_3DES_IDX	1

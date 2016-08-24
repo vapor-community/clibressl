@@ -65,6 +65,7 @@
 #include "include/err.h"
 #include "include/x509v3.h"
 #include "strlcpy.h"
+#include "strlcat.h"
 
 static STACK_OF(CONF_VALUE) *i2v_AUTHORITY_INFO_ACCESS(
     X509V3_EXT_METHOD *method, AUTHORITY_INFO_ACCESS *ainfo,

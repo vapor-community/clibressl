@@ -69,6 +69,7 @@
 #include "include/bio.h"
 #include "include/buffer.h"
 #include "include/err.h"
+#include "asprintf.h"
 
 #define SOCKET_PROTOCOL IPPROTO_TCP
 

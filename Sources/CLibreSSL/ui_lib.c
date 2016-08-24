@@ -63,6 +63,8 @@
 #include "include/buffer.h"
 #include "include/err.h"
 #include "include/ui.h"
+#include "strlcpy.h"
+#include "asprintf.h"
 
 #include "ui_locl.h"
 

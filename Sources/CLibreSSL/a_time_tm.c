@@ -24,6 +24,7 @@
 #include "include/err.h"
 
 #include "o_time.h"
+#include "asprintf.h"
 
 #define RFC5280 0
 #define GENTIME_LENGTH 15
