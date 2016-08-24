@@ -51,6 +51,8 @@
  * ====================================================================
  */
 
+ #if false
+
 #ifndef HEADER_CMS_H
 #define HEADER_CMS_H
 
@@ -470,4 +472,6 @@ void ERR_load_CMS_strings(void);
 #ifdef  __cplusplus
 }
 #endif
+#endif
+
 #endif

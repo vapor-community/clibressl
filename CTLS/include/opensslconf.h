@@ -26,9 +26,11 @@
 #endif
 
 #if !defined(RC2_INT)
-#define RC2_INT unsigned int
+
 #endif
 
+#define RC2_INT unsigned int
+#define RC4_INT unsigned int
 
 #if defined(HEADER_RC4_H)
 #if !defined(RC4_INT)
@@ -39,7 +41,7 @@
  * - Intel P6 because partial register stalls are very expensive;
  * - elder Alpha because it lacks byte load/store instructions;
  */
-#define RC4_INT unsigned int
+
 #endif
 #if !defined(RC4_CHUNK)
 /*

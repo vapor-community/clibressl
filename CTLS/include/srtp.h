@@ -122,6 +122,8 @@
 extern "C" {
 #endif
 
+#include "ssl.h"
+
 #define SRTP_AES128_CM_SHA1_80 0x0001
 #define SRTP_AES128_CM_SHA1_32 0x0002
 #define SRTP_AES128_F8_SHA1_80 0x0003
