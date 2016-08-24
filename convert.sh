@@ -1,19 +1,22 @@
+echo "Don't run this."
+exit
+
 ROOT="$PWD"
 LIBRE="$ROOT/libressl"
-CTLS="$ROOT/CTLS"
+CLibreSSL="$ROOT/CLibreSSL"
 
 # Clean
-rm -rf $CTLS
+rm -rf $CLibreSSL
 
 # Setup
-mkdir $CTLS
-mkdir $CTLS/include
+mkdir $CLibreSSL
+mkdir $CLibreSSL/include
 
 # Copy public headers
-cp -R $LIBRE/include/openssl/*.h $CTLS/include
+cp -R $LIBRE/include/openssl/*.h $CLibreSSL/include
 
 # Get list of public headers
-cd $CTLS/include
+cd $CLibreSSL/include
 public_headers=$(ls)
 
 # Replace `<openssl>` with `""`
@@ -31,30 +34,30 @@ rm -rf *-e
 cd $ROOT
 
 # Copy Misc Headers
-cp -R $LIBRE/include/*.h $CTLS/
+cp -R $LIBRE/include/*.h $CLibreSSL/
 
 # Copy SSL
-cp -R $LIBRE/ssl/*.c $CTLS/
-cp -R $LIBRE/ssl/*.h $CTLS/
+cp -R $LIBRE/ssl/*.c $CLibreSSL/
+cp -R $LIBRE/ssl/*.h $CLibreSSL/
 
 # Copy Crypto
 cd $LIBRE/crypto/;
 
-cp -R *.c $CTLS/
-cp -R *.h $CTLS/
+cp -R *.c $CLibreSSL/
+cp -R *.h $CLibreSSL/
 
 for file in */; do 
     echo "Crypto $file"
-    cp -R $file/*.c $CTLS/
-    cp -R $file*.h $CTLS/
+    cp -R $file/*.c $CLibreSSL/
+    cp -R $file*.h $CLibreSSL/
 done
 
 # for file in $(ls compat); do
 #     echo "Removing compat $file"
-#     rm $CTLS/$file
+#     rm $CLibreSSL/$file
 # done
 
-cd $CTLS
+cd $CLibreSSL
 
 for source in $(ls *.c); do
     for header in $public_headers; do
