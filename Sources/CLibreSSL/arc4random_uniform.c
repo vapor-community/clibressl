@@ -19,9 +19,7 @@
 #include <sys/types.h>
 #include <stdlib.h>
 #include <stdint.h>
-
-uint32_t
-arc4random_uniform(uint32_t upper_bound);
+#include "arc4random_uniform.h"
 
 /*
  * Calculate a uniformly distributed random number less than upper_bound

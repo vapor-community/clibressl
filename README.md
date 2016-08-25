@@ -1,14 +1,14 @@
 # LibreSSL for Swift
 
 ![Swift](http://img.shields.io/badge/swift-v3.0--dev.08.18-brightgreen.svg)
-[![Build Status](https://travis-ci.org/vapor/core.svg?branch=master)](https://travis-ci.org/vapor/core)
-[![CircleCI](https://circleci.com/gh/vapor/core.svg?style=shield)](https://circleci.com/gh/vapor/core)
+[![Build Status](https://travis-ci.org/vapor/clibressl.svg?branch=master)](https://travis-ci.org/vapor/clibressl)
+[![CircleCI](https://circleci.com/gh/vapor/clibressl.svg?style=shield)](https://circleci.com/gh/vapor/clibressl)
 [![Slack Status](http://vapor.team/badge.svg)](http://vapor.team)
 
 This module wraps LibreSSL 2.4.2 in a Swift module.
 
 ```swift
-import LibreSSL
+import CLibreSSL
 
 var context = SHA_CTX()
 SHA1_Init(&context)
@@ -21,7 +21,7 @@ SHA1_Init(&context)
 
 ## 🌏 Environment
 
-|LibreSSL|Xcode|Swift|
+|CLibreSSL|Xcode|Swift|
 |:-:|:-:|:-:|
 |0.1.x|8.0 Beta **6**|DEVELOPMENT-SNAPSHOT-2016-08-18-a|
 
@@ -31,7 +31,7 @@ Visit the Vapor web framework's [documentation](http://docs.vapor.codes) for ins
 
 ## 💧 Community
 
-We pride ourselves on providing a diverse and welcoming community. Join your fellow Qutheory developers in [our slack](http://vapor.team) and take part in the conversation.
+We pride ourselves on providing a diverse and welcoming community. Join your fellow Vapor developers in [our slack](http://vapor.team) and take part in the conversation.
 
 ## 🔧 Compatibility
 
