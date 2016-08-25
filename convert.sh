@@ -40,6 +40,10 @@ cp -R $LIBRE/include/*.h $CLibreSSL/
 cp -R $LIBRE/ssl/*.c $CLibreSSL/
 cp -R $LIBRE/ssl/*.h $CLibreSSL/
 
+# Copy TLS
+cp -R $LIBRE/tls/*.c $CLibreSSL/
+cp -R $LIBRE/tls/*.h $CLibreSSL/
+
 # Copy Crypto
 cd $LIBRE/crypto/;
 
