@@ -42,6 +42,8 @@
  *
  * If *stringp is NULL, strsep returns NULL.
  */
+
+#if false
 char *
 strsep(char **stringp, const char *delim)
 {
@@ -68,3 +70,5 @@ strsep(char **stringp, const char *delim)
 	}
 	/* NOTREACHED */
 }
+
+#endif
