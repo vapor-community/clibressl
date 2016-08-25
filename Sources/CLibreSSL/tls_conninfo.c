@@ -23,6 +23,7 @@
 #include "include/tls.h"
 #include "tls_internal.h"
 #include "reallocarray.h"
+#include "asprintf.h"
 
 static int
 tls_hex_string(const unsigned char *in, size_t inlen, char **out,

@@ -21,6 +21,7 @@
 
 #include "include/tls.h"
 #include "tls_internal.h"
+#include "arc4random_buf.h"
 
 struct tls *
 tls_server(void)

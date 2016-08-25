@@ -30,6 +30,8 @@
 
 #include "include/tls.h"
 #include "tls_internal.h"
+#include "vasprintf.h"
+#include "asprintf.h"
 
 static struct tls_config *tls_config_default;
 

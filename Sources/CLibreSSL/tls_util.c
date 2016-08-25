@@ -24,6 +24,8 @@
 
 #include "include/tls.h"
 #include "tls_internal.h"
+#include "asprintf.h"
+#include "strlcpy.h"
 
 /*
  * Extract the host and port from a colon separated value. For a literal IPv6
