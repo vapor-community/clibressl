@@ -9,7 +9,7 @@
 #import "camellia.h"
 #import "cast.h"
 #import "chacha.h"
-#import "clibressl.h"
+#import "CLibreSSL.h"
 #import "cmac.h"
 #import "cms.h"
 #import "comp.h"
