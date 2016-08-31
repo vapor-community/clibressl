@@ -72,6 +72,7 @@
 
 #include "buffer.h"
 #include "ssl.h"
+#include "ssl3.h"
 
 #ifdef  __cplusplus
 extern "C" {
