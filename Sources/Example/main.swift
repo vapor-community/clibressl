@@ -1,4 +1,6 @@
 import CLibreSSL
 
 print(LIBRESSL_VERSION_TEXT)
-print("\(EVP_chacha20)")
+
+let f = EVP_chacha20()
+print(f)
